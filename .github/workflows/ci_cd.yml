@@ -59,7 +59,7 @@ jobs:
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/python-gha-lab:${{ env.IMAGE_TAG }}
   run_test:
     name: Part 2 - Run pushed image + curl + wait
-    needs: docker
+    needs: CI-Part
 
     # Option A (recommended): your Ubuntu node (self-hosted runner)
     # runs-on: [self-hosted, linux, ubuntu]
