@@ -49,4 +49,4 @@ jobs:
 
       - name: Stage 3 - Push Docker image
         run: |
-          docker push ${{ secrets.DOCKERHUB_USERNAME }}/python-gha-lab:latest .
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/python-gha-lab:latest 
